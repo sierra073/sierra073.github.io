@@ -27,3 +27,9 @@
 
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .display-4 {
+    font-size: 40px;
+  }
+}

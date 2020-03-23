@@ -46,6 +46,17 @@
   };
   // Collapse now if page is not at top
   navbarCollapse();
+
+  // Add about picture
+  var addAboutPicture = function() {
+    if ($(window).width() >= 768) {
+      $("#about").css({"background":"url('img/bg-about.jpeg') no-repeat","background-position":"center","background-size":"cover"})
+    } else {
+      $("#about").css("background", "")
+    }
+  };
+  // Collapse now if page is not at top
+  addAboutPicture();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 

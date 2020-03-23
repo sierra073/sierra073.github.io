@@ -61,3 +61,8 @@
     }
   }
 }
+@include media-breakpoint-down(md) {
+  .navbar-brand {
+    display: none;
+  }
+}
