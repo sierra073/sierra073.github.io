@@ -52,7 +52,7 @@
     if ($(window).width() >= 768) {
       $("#about").css({"background":"url('img/bg-about.jpeg') no-repeat","background-position":"center","background-size":"cover"})
     } else {
-      $("#about").css("background", "")
+      $("#about").css("background", "");
     }
   };
   // Collapse now if page is not at top

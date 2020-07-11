@@ -25,7 +25,6 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-      <img class="mr-3" src='img/sierra-photo.png' width='50px' height='50px'/>
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Sierra Costanza</a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -35,6 +34,9 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#resume">Resume</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
@@ -48,17 +50,23 @@
   </nav>
 
   <!-- Masthead -->
-  <header class="masthead text-white text-center" style="background: url('img/bg-scenery-1.jpg') no-repeat; background-position: center; background-size: cover;">
-    <div class="container d-flex align-items-center flex-column justify-content-between" style="height: 70vh;">
+  <header class="masthead text-white text-center" style="background: url('img/code.jpg') no-repeat; background-position: center; background-size: cover;">
+    <div class="container d-flex align-items-center flex-column justify-content-between">
 
       <!-- Masthead Heading -->
-      <div>
-        <h1 class="display-4 text-center font-weight-bold mb-3 mt-5">Data Analyst turned Software Engineer.</h1> <br />
-        <img src='img/cms.svg' width='170px' height='120px'/><br /><br />
-        <!-- Masthead Subheading -->
-        <p class="masthead-subheading font-weight-light">I build data-driven products and tools that help create positve social impact.</p>
-      </div>
-      <a class="text-white font-weight-light mb-0 js-scroll-trigger" href="#portfolio">
+      <img class="masthead-avatar" src='img/sierra-photo.png'/>
+      <!-- Masthead Subheading -->
+      <h4 class="mt-2">Hello, welcome to my portfolio website!</h4>
+      <p class="lead font-weight-light text-left ml-2">
+        My name is Sierra and I'm a data analyst turned full stack software engineer. <br />
+        My experience/specialties include:
+        <li class="lead">Database Architecture/Warehousing</li>
+        <li class="lead">Data Engineering and Transformation</li>
+        <li class="lead">Machine Learning</li>
+        <li class="lead">Front and Back End Web Development</li>
+        <li class="lead">Data Visualization</li>
+      </p>
+      <a class="text-secondary lead font-weight-bold mb-0 js-scroll-trigger" href="#portfolio">
         <br/>
         Scroll for more
         <br/>
@@ -81,7 +89,7 @@
         <!-- Portfolio Item 1: State of the States Digital Experience 2018-->
         <div class="col-md-6 col-lg-4">
           <p class="text-secondary text-center font-weight-bold mb-1">
-            Annual Report Digital Experience 2018 (ESH)
+            Annual Report Digital Experience<br/>2018 (ESH)
           </p>
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -111,7 +119,7 @@
         <!-- Portfolio Item 3: Integrated Services Layer-->
         <div class="col-md-6 col-lg-4">
           <p class="text-secondary text-center font-weight-bold mb-5">
-            Integrated Services Layer
+            Insights Tracking Tool
           </p>
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -153,7 +161,7 @@
           </div>
         </div>
 
-        <!-- Portfolio Item 6: Starter Projects-->
+        <!-- Portfolio Item 6: Classifying Medical Documents-->
         <div class="col-md-6 col-lg-4">
           <p class="text-secondary text-center font-weight-bold mb-1">
             Coming Soon
@@ -167,10 +175,44 @@
             <img class="img-fluid" src="img/portfolio/default.jpg" alt="">
           </div>
       </div>
+
+        <!-- Portfolio Item 7: Starter Projects-->
+        <div class="col-md-6 col-lg-4">
+          <p class="text-secondary text-center font-weight-bold mb-1">
+            Coming Soon
+          </p>
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/default.jpg" alt="">
+          </div>
+      </div>
       <!-- /.row -->
 
     </div>
   </section>
+
+  <!-- Resume Section -->
+  <section class="page-section resume" id="resume">
+    <div class="container">
+  
+      <!-- Resume Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mt-3 mb-5">Resume</h2>
+  
+      <!-- Resume Grid Items -->
+      <div class="row">
+  
+        <div class="text-center mt-4">
+          <a class="btn btn-xl btn-outline-light" href="img/Sierra Costanza-Resume.pdf" download>
+            <i class="fas fa-download mr-2"></i>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
 
   <!-- About Section -->
   <section class="page-section bg-primary text-white mb-0" id="about">
@@ -182,19 +224,11 @@
       <!-- About Section Content -->
       <div class="row">
         <div class="col-lg-4 ml-auto">
-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization. Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
         </div>
         <div class="col-lg-4 mr-auto">
           <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
         </div>
-      </div>
-
-      <!-- About Section Button -->
-      <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="img/Sierra Costanza-Resume.pdf" download>
-          <i class="fas fa-download mr-2"></i>
-          Download Resume
-        </a>
       </div>
 
     </div>
@@ -211,7 +245,7 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-          <form name="sentMessage" id="contactForm" novalidate="novalidate">
+          <form name="sentMessage" id="contactForm" novalidate="novalidate" method="post">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Name</label>
@@ -290,8 +324,6 @@
       <small>
         Built using <a href="https://startbootstrap.com/">Start Bootstrap</a>
       </small>
-      <small>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></small>
     </div>
   </section>
 
@@ -320,7 +352,7 @@
                 <!-- Portfolio Modal - Title -->
                 <h2 class="portfolio-modal-title text-secondary mb-2">Log Cabin</h2>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">
+                <img class="img-fluid rounded mb-5" src="img/portfolio/01-sots-2.png" alt="">
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
@@ -351,7 +383,7 @@
                 <!-- Portfolio Modal - Title -->
                 <h2 class="portfolio-modal-title text-secondary mb-2">Tasty Cake</h2>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">
+                <img class="img-fluid rounded mb-5" src="img/portfolio/02-ml.svg" alt="">
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
@@ -382,7 +414,7 @@
                 <!-- Portfolio Modal - Title -->
                 <h2 class="portfolio-modal-title text-secondary mb-2">Circus Tent</h2>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt="">
+                <img class="img-fluid rounded mb-5" src="img/portfolio/03-isl.png" alt="">
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
@@ -461,6 +493,37 @@
 
   <!-- Portfolio Modal 6 -->
   <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary mb-2">Submarine</h2>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 7 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal7Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">

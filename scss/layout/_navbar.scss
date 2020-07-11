@@ -32,11 +32,11 @@
 }
 @include media-breakpoint-up(lg) {
   #mainNav {
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     .navbar-brand {
-      font-size: 1.6em;
+      font-size: 1.5em;
       transition: font-size 0.3s;
     }
     .navbar-nav {
@@ -59,10 +59,5 @@
     .navbar-brand {
       font-size: 1.4em;
     }
-  }
-}
-@include media-breakpoint-down(md) {
-  .navbar-brand {
-    display: none;
   }
 }
