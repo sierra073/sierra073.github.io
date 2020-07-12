@@ -20,6 +20,12 @@
 
   <style type="text/css">
     @import url(https://themes.googleusercontent.com/fonts/css?kit=fpjTOVmNbO4Lz34iLyptLUquDBuUUY-j9ALBIXGNogmqeVkRY6JkMXrPV-B2sv-fB6GDs-01xiojPuFmmAe3kg);
+    @media (max-width: 768px) {
+      .c28 {
+        display: none;
+      }
+    }
+
     ul, li {
       line-height: 1.15;
     }
@@ -627,7 +633,7 @@
       font-weight: 700;
       text-decoration: none;
       vertical-align: baseline;
-      font-size: 12pt;
+      font-size: 14pt;
       font-family: "Merriweather";
       font-style: normal
     }
@@ -862,16 +868,16 @@
       <img class="masthead-avatar" src='assets/sierra-photo.png'/>
       <!-- Masthead Subheading -->
       <h4 class="mt-2">Hello, welcome to my portfolio website! 👩🏻‍💻</h4>
-      <p class="lead font-weight-light text-left ml-2">
+      <p class="lead font-weight-light text-left mt-2 ml-2">
         My name is Sierra and I'm a data analyst turned full stack software engineer. <br />
         My specialties include:
-        <li class="lead">Database Architecture/Warehousing</li>
-        <li class="lead">Data Engineering and Transformation</li>
-        <li class="lead">Machine Learning</li>
-        <li class="lead">Front and Back End Web Development</li>
-        <li class="lead">Data Visualization</li>
+        <li>Database Architecture/Warehousing</li>
+        <li>Data Engineering and Transformation</li>
+        <li>Machine Learning</li>
+        <li>Front and Back End Web Development</li>
+        <li>Data Visualization</li>
       </p>
-      <a class="text-secondary lead font-weight-bold mb-0 js-scroll-trigger" href="#portfolio">
+      <a class="lead text-secondary font-weight-bold mb-0 js-scroll-trigger" href="#portfolio">
         <br/>
         Scroll for more
         <br/>
@@ -1005,7 +1011,7 @@
     <div class="container">
   
       <!-- Resume Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mt-0 mb-2">Resume</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mt-0 mb-3">Resume</h2>
   
       <!-- Resume Grid Items -->
       <div class="c28">
@@ -1046,6 +1052,7 @@
                 <p class="c0"><span class="c6"></span></p>
                 <p class="c0"><span class="c6"></span></p>
                 <p class="c0"><span class="c6"></span></p>
+                <p class="c0"><span class="c6"></span></p>
                 <p class="c23"><span class="c19">EDUCATION</span></p>
                 <p class="c0"><span class="c6"></span></p>
                 <p class="c0"><span class="c6"></span></p>
@@ -1056,20 +1063,21 @@
               <td class="c26" colspan="1" rowspan="1">
                 <hr>
                 <p class="c5"><span class="c17">Web Development:</span><span class="c24 c21">&nbsp;Javascript, HTML/CSS, d3,
-                    React.js, Redux, Node.js, Express, Heroku, CircleCI, Docker</span></p>
-                <p class="c5"><span class="c17">Data Engineering, Analysis, Machine Learning:</span><span
-                    class="c24 c21">&nbsp;SQL, Python, AWS, Linux, Bash, R, Tableau</span></p>
-                <p class="c5"><span class="c17">Tools and Processes:</span><span class="c21">&nbsp;Git, Agile/Scrum
+                    React.js, Redux, Node.js, Express, Heroku, CircleCI</span></p>
+                <p class="c5"><span class="c17">Data Engineering, Analysis, Machine Learning:</span>
+                  <span class="c24 c21">&nbsp;SQL, Python, AWS, Linux, Bash, R, Tableau</span></p>
+                <p class="c5"><span class="c17">Tools and Processes:</span><span class="c24 c21">&nbsp;Git, Agile/Scrum
                     Methodologies, Google Suite, Excel, Powerpoint</span></p>
                 <hr>
                 <p class="c18 c25"><span class="c7"></span></p>
                 <p class="c18"><span class="c6">EducationSuperHighway (San Francisco, CA)</span></p>
                 <p class="c10"><span class="c12 c13">Software Engineer</span><span class="c16">&nbsp; </span><span
-                    class="c12">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    class="c12">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c12 c13">Sep 2019
-                    - Present</span></p>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  </span><span class="c12 c13">Sep 2019 - Present</span></p>
                 <ul class="c15 lst-kix_hf2cmj8ad6ar-0 start">
                   <li class="c11"><span class="c3">&#9679; Develop an externally facing web application that provides internet price
                       transparency to decision makers in school districts throughout the US that helps them upgrade their
@@ -1081,10 +1089,12 @@
                       front-end app and data pipeline</span></li>
                 </ul><br />
                 <p class="c10"><span class="c12 c13">Data Engineer</span><span class="c16">&nbsp; </span><span
-                    class="c12">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    class="c12">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="c8">Nov 2018 - Sep 2019</span></p>
                 <ul class="c15 lst-kix_hf2cmj8ad6ar-0">
                   <li class="c11"><span class="c3">&#9679; Converted and then maintained a layered PostgreSQL data warehouse from a
@@ -1099,10 +1109,11 @@
                       report</span></li>
                 </ul><br />
                 <p class="c10"><span class="c12 c13">Data Analyst</span><span class="c16">&nbsp; </span><span
-                    class="c12">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    class="c12">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="c12 c13">Apr 2017 - Nov 2018</span></p>
                 <ul class="c15 lst-kix_hf2cmj8ad6ar-0">
                   <li class="c11"><span class="c3">&#9679; Quantified internet connectivity gaps for 13,000 school districts
@@ -1117,29 +1128,30 @@
                 <p class="c10"><span class="c12 c13">Senior Analyst, Marketing Analytics</span><span class="c16">&nbsp;
                     &nbsp;</span><span class="c12">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span
                     class="c12 c13">Jun 2014 - Apr 2017</span></p>
                 <ul class="c15 lst-kix_list_8-0 start">
                   <li class="c11"><span class="c21 c24">&#9679; Performed exploratory analyses on consumer behaviors to answer
                       business questions and uncover insights to help drive marketing decisions</span></li>
-                  <li class="c11"><span class="c21 24">&#9679; Built Tableau dashboards to report on marketing A/B test results and
-                      visualize consumer behavior trends</span></li>
+                  <li class="c11"><span class="c21 c24">&#9679; Built Tableau dashboards to report on marketing A/B test results and 
+                    visualize consumer behavior trends</span></li>
                 </ul>
                 <hr>
                 <p class="c14"><span class="c24 c21"><br></span></p>
-                <p class="c20"><span class="c16">Johns Hopkins University Whiting School of Engineering (Baltimore, MD) &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+                <p class="c20"><span class="c6">Johns Hopkins University Whiting School of Engineering (Baltimore, MD)</span></p>
                 <p class="c20"><span class="c12 c13">B.S. and M.S., Applied Mathematics and Statistics</span><span
                     class="c12">&nbsp;</span><span class="c16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c8">September 2010 - May
-                    2014</span></p>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  </span><span class="c8">September 2010 - May 2014</span></p>
                 <p class="c14"><span class="c1"></span></p>
                 <p class="c20"><span class="c6">General Assembly (San Francisco, CA)</span></p>
                 <p class="c20"><span class="c12 c13">Data Science (Part Time Course)</span><span
                     class="c16 c13">&nbsp;</span><span class="c16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="c8">January 19th - March 28th, 2017</span></p>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  </span><span class="c8">January 19th - March 28th, 2017</span></p>
                 <p class="c20"><span class="c4">Machine Learning in Python using numpy, pandas, scikit-learn, Jupyter
                     notebooks</span></p>
                 <p class="c0"><span class="c6"></span></p>
