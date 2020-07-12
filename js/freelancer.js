@@ -50,7 +50,7 @@
   // Add about picture
   var addAboutPicture = function() {
     if ($(window).width() >= 768) {
-      $("#about").css({"background":"url('img/bg-about.jpeg') no-repeat","background-position":"center","background-size":"cover"})
+      $("#about").css({"background":"url('assets/bg-about.jpeg') no-repeat","background-position":"center","background-size":"cover"})
     } else {
       $("#about").css("background", "");
     }
