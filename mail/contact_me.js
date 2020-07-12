@@ -1,23 +1,9 @@
-const sanitizeHtml = require('sanitize-html')
-const nodemailer = require('nodemailer')
+"use strict";
 
-const sanitizeInputs = (inputs) => {
-  return inputs.map(input => {
-    return sanitizeHtml(input, {
-      allowedTags: [],
-      allowedAttributes: {}
-    })
-  })
-}
+const nodemailer = require('nodemailer')
 
 const sendContactEmail = async (data) => {
   const { name, email, phone, message } = data
-  [name, email, phone, message] = sanitizeInputs([
-    name,
-    email,
-    phone,
-    message
-  ])
   const mailOptions = {
     from: email,
     to: process.env.EMAIL_ADDRESS,

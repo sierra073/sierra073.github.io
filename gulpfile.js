@@ -98,19 +98,20 @@ function css() {
 // JS task
 function js() {
   return gulp
-    .src([
-      './js/*.js',
-      '!./js/*.min.js'
-    ])
+    .src(['./js/*.js', '!./js/*.min.js'])
     .pipe(uglify())
-    .pipe(header(banner, {
-      pkg: pkg
-    }))
-    .pipe(rename({
-      suffix: '.min'
-    }))
+    .pipe(
+      header(banner, {
+        pkg: pkg
+      })
+    )
+    .pipe(
+      rename({
+        suffix: '.min'
+      })
+    )
     .pipe(gulp.dest('./js'))
-    .pipe(browsersync.stream());
+    .pipe(browsersync.stream())
 }
 
 // Watch files
@@ -118,12 +119,13 @@ function watchFiles() {
   gulp.watch("./scss/**/*", css);
   gulp.watch(["./js/**/*", "!./js/**/*.min.js"], js);
   gulp.watch("./**/*.html", browserSyncReload);
+  gulp.watch('./server.js', browserSyncReload);
 }
 
 // Define complex tasks
 const vendor = gulp.series(clean, modules);
 const build = gulp.series(vendor, gulp.parallel(css, js));
-const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
+const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync))
 
 // Export tasks
 exports.css = css;
