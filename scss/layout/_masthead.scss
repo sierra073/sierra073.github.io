@@ -1,6 +1,6 @@
 @include media-breakpoint-up(xxl) {
 .masthead {
-    height: 79vh;
+    height: 67vh;
     padding-top: calc(6rem + 54px);
     padding-bottom: 6rem;
     .masthead-heading {
@@ -18,7 +18,7 @@
 
 @include media-breakpoint-down(xl) {
   .masthead {
-    height: 77vh;
+    height: 47vh;
     padding-top: 6rem;
     padding-bottom: 5rem;
     .masthead-avatar {
@@ -32,7 +32,7 @@
 
 @include media-breakpoint-down(sm) {
   .masthead {
-    height: 90vh;
+    height: 80vh;
     padding-top: calc(6rem + 74px);
     padding-bottom: 6rem;
   }
